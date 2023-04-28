@@ -17,15 +17,21 @@ import sys
 opt = sys.argv[1]
 person = sys.argv[2]
 
-if opt == '-h':
-     i = 0
-     while i < 22:
-        i = i + 1
-        print("Hello, " + person + "! (" + str(i) + ")")
-elif opt == '-g':
+
+
+
+# Greeting Function
+def greeting(greetingType):
     i = 0
     while i < 22:
         i = i + 1
-        print("goodbye, " + person + "! (" + str(i) + ")")
+        print(greetingType + ", " + person + "! (" + str(i) + ")")
 
+
+
+# Main Code
+if opt == '-h':
+     greeting('Hello')
+elif opt == '-g':
+     greeting('Goodbye')
 
