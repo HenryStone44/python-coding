@@ -35,3 +35,7 @@ if opt == '-h':
 elif opt == '-g':
      greeting('Goodbye')
 
+fruits = ["apple", "banana", "cherry"]
+
+for index, fruit in enumerate(fruits):
+	print((index + 1), fruit)
